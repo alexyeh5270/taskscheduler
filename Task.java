@@ -1,10 +1,10 @@
 public class Task {
     int timeLength;
-    int severity;
+    boolean severity;
     String taskName;
     String taskDescription;
 
-    public Task(int timeLength, int severity, String taskName, String taskDescription) {
+    public Task(int timeLength, boolean severity, String taskName, String taskDescription) {
         this.timeLength = timeLength;
         this.severity = severity;
         this.taskName = taskName;
@@ -19,11 +19,11 @@ public class Task {
         this.timeLength = timeLength;
     }
 
-    public int getSeverity() {
+    public boolean getSeverity() {
         return severity;
     }
 
-    public void setSeverity(int severity) {
+    public void setSeverity(boolean severity) {
         this.severity = severity;
     }
 
